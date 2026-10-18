@@ -1,11 +1,16 @@
-> [!WARNING]
-> **Deprecated (October 2026).** This repository is no longer maintained. Its method has been merged with
-> the earlier StackMFF V3 and redesigned into the unified **StackMFF V3** (pixel-wise classification with
-> cross-image attention). The new code, weights, benchmark results and the paper are released in
-> [StackMFF-V3](https://github.com/Xinzhe99/StackMFF-V3); the overview of the whole series is on the
-> [StackMFF Series](https://github.com/Xinzhe99/StackMFF-Series) page. This code is kept for reference only.
-The deterministic model of this repository is still the fusion stage of [GMFF](https://github.com/Xinzhe99/GMFF).
+> [!NOTE]
+> **Historical StackMFF V4 material.** The deterministic fusion work was developed further in the maintained
+> [StackMFF V3](https://github.com/Xinzhe99/StackMFF-V3) implementation, with released weights, an evaluation
+> toolkit and current benchmark records. See the [StackMFF series](https://github.com/Xinzhe99/StackMFF-Series)
+> for the relationship between versions. The current manuscript is being prepared for submission.
 
-# StackMFF-V4
-# <img src="stackmffv4_framework.jpg" alt="GMFF" height="800" style="vertical-align: middle;"/> 
-StackMFF V4 is the deterministic fusion model used in the generative multi-focus image fusion framework [GMFF](https://github.com/Xinzhe99/GMFF). Its training framework is based on [StackMFF V3](https://github.com/Xinzhe99/StackMFF-V3-legacy), with improvements made only in the network architecture. The [StackMFF V3](https://github.com/Xinzhe99/StackMFF-V3-legacy) project provides detailed training instructions and usage guidelines. Therefore, you can train StackMFF V4 by using StackMFF V3 as the base and replacing the network model with the one provided in [GMFF](https://github.com/Xinzhe99/GMFF).
+# StackMFF V4: historical framework notes
+
+![Historical StackMFF V4 framework](stackmffv4_framework.jpg)
+
+StackMFF V4 was the deterministic fusion stage described in the [GMFF preprint, *Generative Multi-Focus Image Fusion*](https://arxiv.org/abs/2512.21495).
+That preprint also studies generative restoration, which is separate from the deterministic fusion study continued in the unified StackMFF V3.
+
+This historical repository contains the framework illustration and notes; it is not a runnable model release.
+For current inference, training instructions, checkpoint and evaluation code, use [StackMFF V3](https://github.com/Xinzhe99/StackMFF-V3).
+For the earlier convolutional classification implementation, see [StackMFF V3 legacy](https://github.com/Xinzhe99/StackMFF-V3-legacy).
